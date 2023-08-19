@@ -1,0 +1,31 @@
+programa
+	INTEGER a,b,c,d,e.
+	
+	escreva("Programa Teste").
+	escreva("Digite a ").
+	leia(a).
+	escreva("Digite b ").
+	leia(b).
+
+	se (a < b) entao
+		c := a + f.
+	senao
+		c := a - b.
+	fimse.
+	
+	d := c*a+b.
+	
+	e := 0.
+	
+	faca
+		
+		e := d.
+		escreva("E e igual a ").
+		escreva(e).	
+	enquanto(e <> d).
+	
+	
+	escreva("D e igual a ").
+	escreva(d).	
+	
+fimprog.

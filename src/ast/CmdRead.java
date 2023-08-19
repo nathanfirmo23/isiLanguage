@@ -65,7 +65,7 @@ public class CmdRead extends AbstractCommand{
 	        case REAL:
 	            id.setDoubleValue(Double.parseDouble(JOptionPane.showInputDialog("Type Your Input (Real)")));
 	            break;
-	        case TEXTO: // Supondo que você tenha um DataType.TEXT
+	        case TEXTO:
 	            id.setValueText(JOptionPane.showInputDialog("Type Your Input (Text)"));
 	            break;
 	        default:

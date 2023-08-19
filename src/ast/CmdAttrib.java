@@ -54,8 +54,36 @@ public class CmdAttrib extends AbstractCommand {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		id.setValue(expr.eval());
+	    if (expr != null) {
+	        id.setValue(expr.eval());
+	    } else if (text != null) {
+	        // Verifique o tipo de dado do identificador
+	        switch (id.getType()) {
+	            case INTEGER:
+	                try {
+	                    int intValue = Integer.parseInt(text);
+	                    id.setValue(intValue);
+	                } catch (NumberFormatException e) {
+	                    throw new RuntimeException("O valor textual não pode ser convertido para INTEGER.");
+	                }
+	                break;
+	            case REAL:
+	                try {
+	                    double doubleValue = Double.parseDouble(text);
+	                    id.setDoubleValue(doubleValue);
+	                } catch (NumberFormatException e) {
+	                    throw new RuntimeException("O valor textual não pode ser convertido para REAL.");
+	                }
+	                break;
+	            case TEXTO:
+	                id.setValueText(text);
+	                break;
+	            default:
+	                throw new RuntimeException("Tipo de dado desconhecido.");
+	        }
+	    }
 	}
+
+
 
 }

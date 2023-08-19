@@ -1,24 +1,44 @@
 programa
-	INTEGER a,b.
+	INTEGER a,b,c,d,e,f.
+	
+	escreva("Testando simbolos").
+	escreva("#, $, %, &, *, (, ), _, +").
 	
 	escreva("Programa Teste").
-	escreva("Programa Teste").
-	
-	a := 3.
-	b := 3.
-	
-	se (a < b) entao
-		escreva("a menor que b").
-		a := a + b.
-	senao
-		escreva("b menor que a").
-		b := b + a.
-	fimse.
-	
-	se (a < b) entao
-		escreva("a menor que b").
-	senao
-		escreva("b menor que a").
-	fimse.
+	escreva("Digite a valor 2").
+	leia(a).
+	escreva("Digite b valor 1").
+	leia(b).
 
+	se (a < b) entao
+		escreva("Errado pois b menor que a").
+	senao
+		escreva("condicional if correto").
+	fimse.
+	
+	
+	escreva("Multiplicando constantes  5 vezes 2").
+	c := 5*2.
+	escreva(c).
+	
+	escreva("Multiplicando variaveis a vezes b").
+	d := a*b.
+	escreva(d).
+	
+	
+	e := 0.
+	f := 0.
+		
+	faca
+   		escreva ("Valor de e até 3").
+   		e := e + 1.
+	enquanto (e < 3).
+
+	enquanto (f < 3)
+	faca
+   		escreva ("Valor de f até 3").
+   		f := f + 1.
+	fimenquanto.
+	
+	
 fimprog.

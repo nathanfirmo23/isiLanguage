@@ -1,0 +1,24 @@
+programa
+	INTEGER a,b.
+	
+	escreva("Programa Teste").
+	escreva("Programa Teste").
+	
+	a := 3.
+	b := 3.
+	
+	se (a < b) entao
+		escreva("a menor que b").
+		a := a + b.
+	senao
+		escreva("b menor que a").
+		b := b + a.
+	fimse.
+	
+	se (a < b) entao
+		escreva("a menor que b").
+	senao
+		escreva("b menor que a").
+	fimse.
+
+fimprog.

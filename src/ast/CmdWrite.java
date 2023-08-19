@@ -78,8 +78,20 @@ public class CmdWrite extends AbstractCommand{
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
-		JOptionPane.showMessageDialog(null, (id!=null? id.getValue():text));
+	    // Verifica se o identificador não é nulo
+	    if(id != null) {
+	        String message;
+	        // Se o tipo for TEXTO, pegue o valueText
+	        if(id.getType() == DataType.TEXTO) {
+	            message = id.getValueText();
+	        } else {
+	            message = String.valueOf(id.getValue()); // Caso contrário, pegue o valor (isso pode ser estendido para outros tipos se necessário)
+	        }
+	        JOptionPane.showMessageDialog(null, message);
+	    } else {
+	        JOptionPane.showMessageDialog(null, text); // Se o identificador for nulo, exiba o texto diretamente
+	    }
 	}
+
 
 }

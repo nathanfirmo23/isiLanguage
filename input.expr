@@ -1,9 +1,13 @@
 programa
-	TEXTO a.
-	
-	a := "Teste".
-	
-	escreva(a).
-	
-	
+    INTEGER a.
+
+    a := 2.
+
+    faca
+        escreva("Incremente a 3 vezes imprimindo o valor de e todas as vezes").
+        a :=  5.
+        escreva(a).
+    enquanto(a < 5).
+    escreva("Fim").
+
 fimprog.

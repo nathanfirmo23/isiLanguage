@@ -46,16 +46,21 @@ public class CmdDoWhile extends AbstractCommand{
 	
 	@Override
 	public void run() {
-	    do {
-	        for (AbstractCommand cmd : listaCmds) {
-	            try {
-					cmd.run();
-				} catch (NonBooleanEvaluationException e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-	        }
-	    } while (expr.eval() == 1);  // Assume que a expressão retorna 1 para verdadeiro e 0 para falso.
+	    try {
+			do {
+			    for (AbstractCommand cmd : listaCmds) {
+			        try {
+						cmd.run();
+					} catch (NonBooleanEvaluationException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					}
+			    }
+			} while (expr.evaluate());
+		} catch (NonBooleanEvaluationException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}  // Assume que a expressão retorna 1 para verdadeiro e 0 para falso.
 	}
 
 

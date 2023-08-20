@@ -111,9 +111,9 @@ public class Program {
 				{
 			        joiner = new StringJoiner(",");
 			        for (String text : listaTexts) {
-			            joiner.add(text);
+			            joiner.add(text+"[150]");
 			        }        
-			        strBuilder.append("String " + joiner.toString() +";\n");				
+			        strBuilder.append("char " + joiner.toString() +";\n");				
 				}			
 				comandos.stream().forEach(c -> {
 					System.out.print(c.generateCode(language));

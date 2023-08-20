@@ -1,0 +1,6 @@
+programa
+    INTEGER a,b.
+    
+    leia(a).	
+
+fimprog.

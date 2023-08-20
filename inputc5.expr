@@ -1,0 +1,26 @@
+programa
+    INTEGER a,b.
+	TEXTO teste.
+	
+	a := 20 + 5.
+	
+	escreva(a).
+	
+	leia(b).
+		
+	faca
+		escreva(b).
+		
+	enquanto (b < 10).
+
+	se(a > 20) entao
+		
+		teste := "Fim".
+		
+		escreva(teste).
+	senao
+		
+		escreva(a).
+	fimse.
+	
+fimprog.

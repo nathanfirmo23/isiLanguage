@@ -1,13 +1,35 @@
 programa
-    INTEGER a.
+    INTEGER a, b, c,f,g,h.
+	TEXTO d.
+	REAL e.
+	
+	leia(a).
+	leia(b).
+	se(a > b) entao
+		escreva(a).
+		
+	senao	
+		escreva(b).
+	fimse.
+	
+	leia(d).
+	escreva(d).	
 
-    a := 2.
-
-    faca
-        escreva("Incremente a 3 vezes imprimindo o valor de e todas as vezes").
-        a :=  5.
-        escreva(a).
-    enquanto(a < 5).
-    escreva("Fim").
-
+	c := 6.
+	
+	enquanto (c < 10) faca
+		c := c + 1.
+		escreva(c).
+	fimenquanto.
+	
+	faca
+		escreva("Teste Do-While").
+	enquanto (c < 10).
+	
+	escreva("Insira um numero real: ").
+	leia(e).
+	escreva(e).
+	
+	f := 10+5*2.
+	
 fimprog.

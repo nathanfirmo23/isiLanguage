@@ -1,0 +1,7 @@
+programa
+    INTEGER a.
+	REAL b.
+	
+	a := b.
+
+fimprog.

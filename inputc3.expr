@@ -1,0 +1,6 @@
+programa
+	TEXTO a.
+	
+	a := a + 2.
+
+fimprog.
